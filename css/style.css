@@ -1,0 +1,77 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+
+}
+
+.cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #f5baba;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5 rem;
+    border: none;
+    background-color: #da5454;
+    box-shadow: 5px 5px 10 px -3px #00000040, -5px -5px 10 px -3px #00000040;
+}
+
+button:active {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1 / -1;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #1b1919;
+    border-radius: 32px;
+    text-align: right;
+    padding: 16px;
+    font-size: 2.5rem;
+    color: rgb(3, 247, 16);
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000040;
+}
+
+#valor-actual {
+    font-size: 1em;
+    color: rgb(4, 247, 17);
+}
+
+#valor-anterior {
+    font-size: 1em;
+    color: rgb(4, 247, 17);
+}
